@@ -4,8 +4,11 @@
   type: github
   icon: 'fab fa-github'
 -
-  type: twitter
-  icon: 'fab fa-twitter'
+  type: discord
+  icon: 'fab fa-discord'
+  url: 'https://discord.r3dspace.xyz/'
+#  type: twitter
+#  icon: 'fab fa-twitter'
 -
   type: email
   icon: 'fas fa-envelope'
