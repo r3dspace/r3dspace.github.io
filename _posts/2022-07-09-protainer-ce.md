@@ -8,7 +8,7 @@ tags: [managment, monitoring]     # TAG names should always be lowercase
 Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. It is designed to be as simple to deploy as it is to use. The application allows you to manage all your orchestrator resources (containers, images, volumes, networks and more) through a ‘smart’ GUI and/or an extensive API.
 Portainer consists of a single container that can run on any cluster. It can be deployed as a Linux container or a Windows native container.
 
-## Depemdemcies
+## **Depemdemcies**
 
 For everything to work out you will need to make sure that you have the following requirements:
 
@@ -21,7 +21,7 @@ If this is the case we can carrie on creating the pi-hole service.
 > It is recomended to clone the GitHub repo [home-lab](https://github.com/r3dspace/home-lab) for the most up to date configuration of this service. 
 {: .prompt-info }
 
-## Setting up portainer container
+## **Setting up portainer container**
 
 Create a `docker-compose.yml` and copy the data below into it. 
 
@@ -48,7 +48,7 @@ services:
       # - EDGE_INSECURE_POLL: 1     # Needed when using self signed cert with edge agent
 ```
 
-## Managing the portainer container
+## **Managing the portainer container**
 
 All commands listet here should be run in the same directory as the compose file. 
 
@@ -76,7 +76,7 @@ sudo docker compose up -d --force-recreate
 sudo docker compose logs portainer
 ```
 
-## Post-install
+## **Post-install**
 
 After you have startet Portainer visit the url `https://<host-ip-address>:9443`. Here you will need to setup your Portainer instance.
 
@@ -85,13 +85,13 @@ After you have startet Portainer visit the url `https://<host-ip-address>:9443`.
 ![setup initial user](/assets/img/portainer-initial-user-setup.png){: .shadow w="500" h="200" }
 
 
-## Edge agent
+## **Edge agent**
 
 Find out more about the use of the edge agent [here](https://downloads.portainer.io/edge_agent_guide.pdf).
 
 <br>
 
-## Links
+## **Links**
 
 ⚙️ If you see something that needs to be fixed, this documentation is open source! Feel free to open an issue [here](https://github.com/r3dspace/r3dspace.github.io).
 

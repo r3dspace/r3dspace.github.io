@@ -8,7 +8,7 @@ tags: [install, setup]     # TAG names should always be lowercase
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare sapien sed nulla ornare, in aliquam lectus porta. Aenean bibendum porttitor aliquam. Phasellus sed pretium nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ultrices sem enim. Etiam felis tellus, scelerisque vel nisl et, dictum aliquam eros. Sed nec efficitur nisi. Quisque accumsan, lectus et interdum tincidunt, tortor nunc rhoncus tortor, sit amet finibus justo ex sed ipsum. Suspendisse sem enim, lacinia in elit eu, mattis blandit ante. Donec vitae diam lacus.
 
 
-## Depemdemcies
+## **Depemdemcies**
 
 For everything to work out you will need to make sure that you have the following requirements:
 
@@ -19,7 +19,7 @@ For everything to work out you will need to make sure that you have the followin
 If this is the case we can carrie on creating a bootable Windows installation drive.
 
 
-## Creat installation media
+## **Creat installation media**
 
 Download the Windows [media creation tool](https://www.microsoft.com/de-de/software-download/windows10) from Microsoft. After completing the download run the `MediaCreationToolXXXX.exe`.
 
@@ -54,7 +54,7 @@ Download the Windows [media creation tool](https://www.microsoft.com/de-de/softw
 ![media creation tool](/assets/img/win-setup/media-creation-tool-7.png){: .shadow w="500" h="200" }
 
 
-## Installing Windows
+## **Installing Windows**
 
 To boot from your USB drive turn on your computer and enter the boot menu by spamming one of the following keys `ESC, F1, F8 ,F9, F10, F11, F12 or Delete`
 
@@ -98,7 +98,7 @@ To boot from your USB drive turn on your computer and enter the boot menu by spa
 ![windows install](/assets/img/win-setup/windows-install-9.png){: .shadow w="500" h="200" }
 
 
-## Setup of Windows
+## **Setup of Windows**
 
 1. Select your region, then confirme it with `Yes`
 
@@ -155,17 +155,17 @@ To boot from your USB drive turn on your computer and enter the boot menu by spa
 
 ![windows install setup](/assets/img/win-setup/windows-install-setup-12.png){: .shadow w="500" h="200" }
 
-### Installing drivers
+### **Installing drivers**
 
 Text coming soon!
 
 
-### Installing firmware
+### **Installing firmware**
 
 Text coming soon!
 
 
-### Removing junk
+### **Removing junk**
 
 Run the following commands in powershell as an administrator, if you want to make these changes to your system.
 
@@ -215,7 +215,7 @@ Get-AppxPackage *Spotify* -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Reality* -AllUsers | Remove-AppxPackage
 ```
 
-### Setting defaults
+### **Setting defaults**
 
 To create the best and clean expierence to new users on the system we need to edit the default user layouts under `C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\DefaultLayouts.xml`. Copy the following code into the file and after that save it
 
@@ -247,7 +247,7 @@ To create the best and clean expierence to new users on the system we need to ed
 
 <br>
 
-## Links
+## **Links**
 
 ⚙️ If you see something that needs to be fixed, this documentation is open source! Feel free to open an issue [here](https://github.com/r3dspace/r3dspace.github.io).
 
