@@ -1,5 +1,5 @@
 ---
-title: Portainer Community Edition
+title: Portainer your container manager
 date: 2022-07-09 11:00:00 +0100
 categories: [docker, docker-compose]
 tags: [managment, monitoring]     # TAG names should always be lowercase
@@ -33,7 +33,8 @@ volumes:
 
 services:
   portainer:
-    image: portainer/portainer-ce:latest
+    image: portainer/portainer-ce:latest    # Image for community edition
+    # image: portainer/portainer-ee:latest  # Image for enterprise
     container_name: portianer
     restart: unless-stopped
     volumes:

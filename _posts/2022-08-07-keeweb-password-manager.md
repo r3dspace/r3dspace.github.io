@@ -82,7 +82,7 @@ Like mentioned above we still need to make some ajustments on the core applicati
 ![keeweb setup](/assets/img/keeweb/keeweb-setup-7.png){: .shadow w="500" h="200" }
 
 
-## **KeeWeb use**
+## **KeeWeb usage**
 
 After making these changes listed above, we can now finally start populating the database with content.
 
@@ -91,7 +91,7 @@ To add new entries, Groups or Templates klick the + icon in the main menu and th
 ![keeweb use](/assets/img/keeweb/keeweb-setup-8.png){: .shadow w="500" h="200" }
 
 
-### **Adding a entry**
+### **Adding an entry**
 An entry is used to store your account information.
 
 - `Title` - The title of your entry. For example, *Steam Primary*
