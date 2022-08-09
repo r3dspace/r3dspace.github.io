@@ -3,6 +3,11 @@ title: KeeWeb an opensource password manager
 date: 2022-08-07 14:00:00 +0200
 categories: [application, password manager]
 tags: [security, privacy, password]     # TAG names should always be lowercase
+image:
+  path: /assets/img/keeweb/keeweb_title_image.png
+  width: 800
+  height: 500
+  alt: KeeWeb an opensource password manager.
 ---
 
 In today’s days society everyone has more than a couple of online and offline accounts. Most people reuse or only slightly alter their passwords between each account. However, this is a serious security risk. If one password gets compromised, due to the provider not having adequate security measures, your other accounts are automatically at risk. This is only one example of how your login credentials could be compromised.

@@ -3,9 +3,15 @@ title: Windows 10 fresh install & setup
 date: 2022-07-16 17:00:00 +0100
 categories: [os, windows]
 tags: [install, setup]     # TAG names should always be lowercase
+image:
+  path: /assets/img/win-setup/windows_title_image.png
+  width: 800
+  height: 500
+  alt: A fresh start with Windows.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare sapien sed nulla ornare, in aliquam lectus porta. Aenean bibendum porttitor aliquam. Phasellus sed pretium nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ultrices sem enim. Etiam felis tellus, scelerisque vel nisl et, dictum aliquam eros. Sed nec efficitur nisi. Quisque accumsan, lectus et interdum tincidunt, tortor nunc rhoncus tortor, sit amet finibus justo ex sed ipsum. Suspendisse sem enim, lacinia in elit eu, mattis blandit ante. Donec vitae diam lacus.
+The Windows 10 upgrade process drags old files, settings, and programs from your previous Windows system to your new one. Microsoft allows you to get an entirely fresh system by performing a clean install. <br>
+This is particularly useful if you’ve purchased a new Windows 10 PC and it includes manufacturer-installed bloatware you don’t want. Or, you may need to perform a clean install on a computer without an existing Windows system after installing a new hard drive or you just want to start over because your system is getting a bit slow.
 
 
 ## **Depemdemcies**

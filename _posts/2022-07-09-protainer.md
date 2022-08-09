@@ -3,6 +3,11 @@ title: Portainer your container manager
 date: 2022-07-09 11:00:00 +0100
 categories: [docker, docker-compose]
 tags: [managment, monitoring]     # TAG names should always be lowercase
+image:
+  path: /assets/img/portainer/portainer_title_image.png
+  width: 800
+  height: 500
+  alt: Portainer your container manager.
 ---
 
 Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. It is designed to be as simple to deploy as it is to use. The application allows you to manage all your orchestrator resources (containers, images, volumes, networks and more) through a ‘smart’ GUI and/or an extensive API.
@@ -83,7 +88,7 @@ After you have startet Portainer visit the url `https://<host-ip-address>:9443`.
 
 1. Create an default user with administrator rights. It is recomendet to not create a user called root, admin or administrator but something close. 
 
-![setup initial user](/assets/img/portainer-initial-user-setup.png){: .shadow w="500" h="200" }
+![setup initial user](/assets/img/portainer/portainer-initial-user-setup.png){: .shadow w="500" h="200" }
 
 
 ## **Edge agent**
