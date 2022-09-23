@@ -50,7 +50,7 @@ services:
       - 9443:9443/tcp
       - 8000:8000/tcp
       - 8000:8000/udp
-    environment:
+    # environment:
       # - EDGE_INSECURE_POLL: 1     # Needed when using self signed cert with edge agent
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: Watchtower watching for container updates
 date: 2022-08-08 14:00:00 +0200
-categories: [docker, compose]
+categories: [docker, docker-compose]
 tags: [update, security]     # TAG names should always be lowercase
 image:
   path: /assets/img/watchtower/watchtower_title_image.png
