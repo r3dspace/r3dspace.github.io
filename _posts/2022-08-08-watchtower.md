@@ -147,7 +147,7 @@ sudo docker compose up -d
 
 # Stop the compose stack
 # ---
-sudo docker compose stop
+sudo docker compose down
 
 # Rebuild / restart the compose stack
 # ---

@@ -20,7 +20,7 @@ For everything to work out you will need to make sure that you have the followin
 * [docker](https://docs.docker.com/get-docker/)
 * [docker-compose](https://docs.docker.com/compose/install/compose-plugin/)
 
-If this is the case, we can carry on creating the pi-hole service.
+If this is the case, we can carry on creating the compose stack.
 
 
 > It is recomended to clone the GitHub repo [home-lab](https://github.com/r3dspace/home-lab) for the most up to date configuration of this service. 
@@ -64,7 +64,7 @@ sudo docker compose up -d
 
 # Stop the compose stack
 # ---
-sudo docker compose stop
+sudo docker compose down
 
 # Rebuild / restart the compose stack
 # ---
