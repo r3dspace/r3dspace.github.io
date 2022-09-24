@@ -22,7 +22,7 @@ For everything to work out you will need to make sure that you have the followin
 * Recomended to have Windows 10 Pro lizen
 * ...
 
-If this is the case we can carrie on creating a bootable Windows installation drive.
+If this is the case, we can carry on creating a bootable Windows installation drive.
 
 
 ## **Creat installation media**

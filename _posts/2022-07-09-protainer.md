@@ -1,7 +1,7 @@
 ---
 title: Portainer your container manager
 date: 2022-07-09 11:00:00 +0100
-categories: [docker, docker-compose]
+categories: [docker, compose]
 tags: [managment, monitoring]     # TAG names should always be lowercase
 image:
   path: /assets/img/portainer/portainer_title_image.png
@@ -20,7 +20,7 @@ For everything to work out you will need to make sure that you have the followin
 * [docker](https://docs.docker.com/get-docker/)
 * [docker-compose](https://docs.docker.com/compose/install/compose-plugin/)
 
-If this is the case we can carrie on creating the pi-hole service.
+If this is the case, we can carry on creating the pi-hole service.
 
 
 > It is recomended to clone the GitHub repo [home-lab](https://github.com/r3dspace/home-lab) for the most up to date configuration of this service. 
@@ -43,53 +43,54 @@ services:
     container_name: portianer
     restart: unless-stopped
     volumes:
-      - data:/data
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock
+      - data:/data
     ports:
       - 9443:9443/tcp
       - 8000:8000/tcp
-      - 8000:8000/udp
     # environment:
       # - EDGE_INSECURE_POLL: 1     # Needed when using self signed cert with edge agent
 ```
 
-## **Managing the portainer container**
+## **Managing the compose stack**
 
-All commands listet here should be run in the same directory as the compose file. 
-
-<b>Start</b> the container:
+The following commands should be run in the same directory as the docker compose file.
 
 ```bash
+# Start the compose stack
+# ---
 sudo docker compose up -d
-```
 
-<b>Stop</b> the container:
-
-```bash
+# Stop the compose stack
+# ---
 sudo docker compose stop
-```
 
-<b>Restart / rebuild</b> container:
-
-```bash
+# Rebuild / restart the compose stack
+# ---
 sudo docker compose up -d --force-recreate
-```
 
-<b>Logs</b> view:
-
-```bash
+# View the compose stack logs
+# ---
 sudo docker compose logs portainer
 ```
 
 ## **Post-install**
 
-After you have startet Portainer visit the url `https://<host-ip-address>:9443`. Here you will need to setup your Portainer instance.
+After you have started Portainer visit the url `https://<host-ip-address>:9443`. Here you will need to setup your admin account for your Portainer instance. Just type in a username, password and optionally opt out of the *annonymouse statistics* collection.
 
-1. Create an default user with administrator rights. It is recomendet to not create a user called root, admin or administrator but something close. 
+> Try NOT to use a username, like *root*, *admin* or *administrator*, instead use a username such as *aH2gme4*. This will increase your resistance against brut force attacks. Also have a password with at least 12 characters. It should include upper and lowercase letters, numbers and symbols.
+{: .prompt-tip }
 
-![setup initial user](/assets/img/portainer/portainer-initial-user-setup.png){: .shadow w="500" h="200" }
+![setup initial user](/assets/img/portainer/portainer-post-instal-1.png){: .shadow w="800" h="500" }
 
+After successfully login in to your Portainer instance you can click on `Get Started` to start creating containers and stacks on your host. If you want to link another Host with your Portainer instance you can click on `Add Environments`.
+
+![setup initial user](/assets/img/portainer/portainer-post-instal-2.png){: .shadow w="800" h="500" }
+
+Congratulations 🎉 you have successfully set up your Portainer instance.
+
+![setup initial user](/assets/img/portainer/portainer-post-instal-3.png){: .shadow w="800" h="500" }
 
 ## **Edge agent**
 

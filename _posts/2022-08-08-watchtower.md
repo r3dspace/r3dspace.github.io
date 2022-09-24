@@ -1,7 +1,7 @@
 ---
 title: Watchtower watching for container updates
 date: 2022-08-08 14:00:00 +0200
-categories: [docker, docker-compose]
+categories: [docker, compose]
 tags: [update, security]     # TAG names should always be lowercase
 image:
   path: /assets/img/watchtower/watchtower_title_image.png
@@ -20,7 +20,7 @@ For everything to work out you will need to make sure that you have the followin
 * [docker](https://docs.docker.com/get-docker/)
 * [docker-compose](https://docs.docker.com/compose/install/compose-plugin/)
 
-If this is the case we can carrie on creating the pi-hole service.
+If this is the case, we can carry on creating the pi-hole service.
 
 
 > It is recomended to clone the GitHub repo [home-lab](https://github.com/r3dspace/home-lab) for the most up to date configuration of this service. 
@@ -136,31 +136,25 @@ Environment Variable: WATCHTOWER_TIMEOUT
 
 ```
 
-## **Managing the portainer container**
+## **Managing the compose stack**
 
-All commands listet here should be run in the same directory as the compose file. 
-
-<b>Start</b> the container:
+The following commands should be run in the same directory as the docker compose file.
 
 ```bash
+# Start the compose stack
+# ---
 sudo docker compose up -d
-```
 
-<b>Stop</b> the container:
-
-```bash
+# Stop the compose stack
+# ---
 sudo docker compose stop
-```
 
-<b>Restart / rebuild</b> container:
-
-```bash
+# Rebuild / restart the compose stack
+# ---
 sudo docker compose up -d --force-recreate
-```
 
-<b>Logs</b> view:
-
-```bash
+# View the compose stack logs
+# ---
 sudo docker compose logs portainer
 ```
 
